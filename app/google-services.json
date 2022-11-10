@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "407096058038",
+    "project_id": "authentication-df49a",
+    "storage_bucket": "authentication-df49a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407096058038:android:a6c52c855b6e183029c617",
+        "android_client_info": {
+          "package_name": "com.example.authentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "407096058038-1ek9t80ba5icfm77rd7hpghhrhc3eish.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD6AsV3IbqW96U0QEWCkUL9YsYp7HM0DA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "407096058038-1ek9t80ba5icfm77rd7hpghhrhc3eish.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
