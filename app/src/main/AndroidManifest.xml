@@ -14,27 +14,41 @@
         android:theme="@style/Theme.Authentication"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".form"
             android:exported="false" />
         <activity
-            android:name=".Registration"
+            android:name=".lnf"
             android:exported="false" />
+        <activity
+            android:name=".lostnfound"
+            android:exported="false"
+            android:label="@string/title_activity_lostnfound"
+            android:theme="@style/Theme.Authentication.NoActionBar" />
         <activity
             android:name=".Login"
             android:exported="false" />
         <activity
-            android:name=".WelcomePage"
-            android:exported="true">
+            android:name=".Option"
+            android:exported="false" />
+        <activity
+            android:name=".Registration"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".Login" -->
+        <!-- android:exported="false" /> -->
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:label="Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
