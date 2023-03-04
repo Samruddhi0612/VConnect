@@ -19,11 +19,19 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class form extends AppCompatActivity {
 
-    private DatabaseReference m
+    Button submit, upload;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form);
+        submit = findViewById(R.id.submit);
+        upload = findViewById(R.id.upload_image);
 
+        upload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(form.this, Upload_image.class));
+            }
+        });
 
     }
 }
