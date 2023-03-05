@@ -19,34 +19,34 @@ import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 
-public class lnf extends AppCompatActivity {
+public class bns extends AppCompatActivity {
     Button plus;
 
     public FirestoreRecyclerAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lnf);
+        setContentView(R.layout.activity_bns);
         FirebaseFirestore firebaseFirestore = FirebaseFirestore.getInstance();
         RecyclerView mFirestoreList = findViewById(R.id.recyclerView);
         plus= findViewById(R.id.Add_Lost);
-        plus.setOnClickListener(view -> startActivity(new Intent(lnf.this,form.class)));
+        plus.setOnClickListener(view -> startActivity(new Intent(bns.this, sell_form.class)));
 
-        Query query = firebaseFirestore.collection("Courses");
-        FirestoreRecyclerOptions<products_model> options = new FirestoreRecyclerOptions.Builder<products_model>()
-                .setQuery(query,products_model.class)
+        Query query = firebaseFirestore.collection("Seller");
+        FirestoreRecyclerOptions<products_models> options = new FirestoreRecyclerOptions.Builder<products_models>()
+                .setQuery(query,products_models.class)
                 .build();
         Log.d("HERE---", options.toString());
-        adapter = new FirestoreRecyclerAdapter<products_model, ProductsViewHolder>(options) {
+        adapter = new FirestoreRecyclerAdapter<products_models, bns.ProductsViewHolder>(options) {
             @NonNull
             @Override
-            public ProductsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_single,parent,false);
+            public bns.ProductsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_singlet,parent,false);
                 return new ProductsViewHolder(view);
             }
 
             @Override
-            protected void onBindViewHolder(@NonNull ProductsViewHolder holder, int position, @NonNull products_model model) {
+            protected void onBindViewHolder(@NonNull ProductsViewHolder holder, int position, @NonNull products_models model) {
                 Log.d("here is name", model.toString());
                 holder.name.setText(model.getCourseName());
                 holder.desc.setText(model.getCourseDescription());

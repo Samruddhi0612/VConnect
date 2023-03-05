@@ -2,18 +2,44 @@ package com.example.authentication;
 
 public class User {
 
-    public String name;
-    public String desc ;
-    public String date;
+    // variables for storing our data.
+    private String name, description, date;
 
     public User() {
-        // Default constructor required for calls to DataSnapshot.getValue(User.class)
+        // empty constructor
+        // required for Firebase.
     }
 
-    public User(String username, String descp, String datel) {
-        this.name = username;
-        this.desc = descp;
-        this.date = datel;
+    // Constructor for all variables.
+    public User(String name, String desc, String date) {
+        this.name = name;
+        this.description = desc;
+        this.date = date;
     }
 
+    // getter methods for all variables.
+    public String getCourseName() {
+        return name;
+    }
+
+    public void setCourseName(String name) {
+        this.name = name;
+    }
+
+    public String getCourseDescription() {
+        return description;
+    }
+
+    // setter method for all variables.
+    public void setCourseDescription(String description) {
+        this.description = description;
+    }
+
+    public String getCourseDuration() {
+        return date;
+    }
+
+    public void setCourseDuration(String date) {
+        this.date = date;
+    }
 }

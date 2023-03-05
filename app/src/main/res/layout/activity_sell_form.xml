@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".form">
+    tools:context=".sell_form">
 
     <TextView
         android:id="@+id/textView4"
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
         android:fontFamily="@font/acme"
-        android:text="Lost Item Request"
+        android:text="Details Of Item"
         android:textColor="@color/black"
         android:textSize="48dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,74 +21,72 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/item_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName"
         android:textColor="@color/black"
-        android:textColorHint="@color/material_dynamic_neutral_variant30"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
+
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/item_desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="52dp"
         android:ems="10"
         android:hint="Item Description"
         android:inputType="textPersonName"
         android:textColor="@color/black"
-        android:textColorHint="@color/material_dynamic_neutral_variant30"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/item_name" />
 
     <Button
         android:id="@+id/upload_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="52dp"
         android:text="Upload Image"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate"
-        app:layout_constraintVertical_bias="0.257" />
+        app:layout_constraintTop_toBottomOf="@+id/item_price" />
 
     <Button
         android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:text="Submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/upload_image"
-        app:layout_constraintVertical_bias="0.58" />
+        app:layout_constraintVertical_bias="0.3" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/item_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="52dp"
         android:ems="10"
-        android:hint="Phone Number"
-        android:inputType="date"
-        android:textColor="@color/black"
-        android:textColorHint="@color/material_dynamic_neutral_variant30"
+        android:hint="Price"
+        android:inputType="number"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/item_desc" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

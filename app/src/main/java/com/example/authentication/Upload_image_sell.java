@@ -29,7 +29,7 @@ import java.util.UUID;
 
 import javax.annotation.Nullable;
 
-public class Upload_image extends AppCompatActivity {
+public class Upload_image_sell extends AppCompatActivity {
 
     // views for button
     private Button btnSelect, btnUpload;
@@ -51,7 +51,7 @@ public class Upload_image extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_upload_image);
+        setContentView(R.layout.activity_upload_image_sell);
 
 
         ColorDrawable colorDrawable
@@ -167,7 +167,7 @@ public class Upload_image extends AppCompatActivity {
                                     // Image uploaded successfully
                                     // Dismiss dialog
                                     progressDialog.dismiss();
-                                    Toast.makeText(Upload_image.this, "Image Uploaded!!", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(Upload_image_sell.this, "Image Uploaded!!", Toast.LENGTH_SHORT).show();
                                 }
                             })
 
@@ -178,7 +178,7 @@ public class Upload_image extends AppCompatActivity {
 
                             // Error, Image not uploaded
                             progressDialog.dismiss();
-                            Toast.makeText(Upload_image.this, "Failed " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Upload_image_sell.this, "Failed " + e.getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     })
                     .addOnProgressListener(
